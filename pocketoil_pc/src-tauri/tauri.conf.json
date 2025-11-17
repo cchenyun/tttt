@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.tauri.app/config/1",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "口袋原油PC",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "windows": [
+      {
+        "title": "口袋原油PC",
+        "width": 1400,
+        "height": 900,
+        "url": "https://pocketoil.com/web",
+        "resizable": true,
+        "center": true,
+        "minWidth": 1200,
+        "minHeight": 800
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.kingbi.oilpc",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "shortDescription": "口袋原油PC",
+      "longDescription": "口袋原油PC端是一站式原油与成品油行情信息平台，汇聚专业数据、实时价格、市场分析与资讯信息。无论是贸易公司、炼化厂商还是其他油品相关企业，都能在这里快速查看所需油品信息，精准掌握市场动态，助力高效决策。",
+      "publisher": "南京源链网络科技有限公司",
+      "macOS": {
+        "hardenedRuntime": true,
+        "minimumSystemVersion": "10.15",
+        "entitlements": "./entitlements.plist",
+        "signingIdentity": "Developer ID Application: Nanjing Yuanlian Network Technology Co., Ltd (BHYBHZGP8X)"
+      }
+    }
+  }
+}

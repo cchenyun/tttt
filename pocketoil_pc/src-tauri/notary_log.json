@@ -1,0 +1,37 @@
+{
+  "logFormatVersion": 1,
+  "jobId": "ff1415a2-d533-48fa-9a60-e326762125dd",
+  "status": "Accepted",
+  "statusSummary": "Ready for distribution",
+  "statusCode": 0,
+  "archiveFilename": "\u53e3\u888b\u539f\u6cb9PC.zip",
+  "uploadDate": "2025-11-14T06:27:06.717Z",
+  "sha256": "ef02af56e86edc9cd9f010edcc987201884847997d1e768dc6a78051a959e94c",
+  "ticketContents": [
+    {
+      "path": "\u53e3\u888b\u539f\u6cb9PC.zip/\u53e3\u888b\u539f\u6cb9PC.app",
+      "digestAlgorithm": "SHA-256",
+      "cdhash": "732df080703f36d5e8bf191499890ad45a3f2507",
+      "arch": "x86_64"
+    },
+    {
+      "path": "\u53e3\u888b\u539f\u6cb9PC.zip/\u53e3\u888b\u539f\u6cb9PC.app",
+      "digestAlgorithm": "SHA-256",
+      "cdhash": "a7c269d196a67526d96517d50970dfce300c7895",
+      "arch": "arm64"
+    },
+    {
+      "path": "\u53e3\u888b\u539f\u6cb9PC.zip/\u53e3\u888b\u539f\u6cb9PC.app/Contents/MacOS/\u53e3\u888b\u539f\u6cb9PC",
+      "digestAlgorithm": "SHA-256",
+      "cdhash": "732df080703f36d5e8bf191499890ad45a3f2507",
+      "arch": "x86_64"
+    },
+    {
+      "path": "\u53e3\u888b\u539f\u6cb9PC.zip/\u53e3\u888b\u539f\u6cb9PC.app/Contents/MacOS/\u53e3\u888b\u539f\u6cb9PC",
+      "digestAlgorithm": "SHA-256",
+      "cdhash": "a7c269d196a67526d96517d50970dfce300c7895",
+      "arch": "arm64"
+    }
+  ],
+  "issues": null
+}
