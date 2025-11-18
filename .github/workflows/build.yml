@@ -58,10 +58,11 @@ jobs:
                 APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
               run: |
                 echo "$APPLE_CERTIFICATE" | base64 --decode > certificate.p12
-                security create-keychain -d user -p "123456" build.keychain
+                security create-keychain  -p "" build.keychain
                 security default-keychain -s build.keychain
                 security unlock-keychain -p "" build.keychain
                 security import certificate.p12 -k build.keychain -P "$APPLE_CERTIFICATE_PASSWORD" -T /usr/bin/codesign
+                security set-key-partition-list -S apple-tool:,apple: -s -k "" build.keychain
 
 
             - name: Build the app
