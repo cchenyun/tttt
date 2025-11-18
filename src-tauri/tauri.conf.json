@@ -7,7 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "口袋原油PC",
+    "productName": "PocketOilPC",
     "version": "1.0.0"
   },
   "tauri": {
