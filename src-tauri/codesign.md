@@ -8,7 +8,7 @@
     npm run tauri build -- --target aarch64-apple-darwin
 
 # 执行签名
-codesign --deep --force --sign "Developer ID Application: Nanjing Yuanlian Network Technology Co., Ltd (BHYBHZGP8X)" --entitlements entitlements.mac.plist target/release/bundle/macos/口袋原油PC.app
+codesign --deep --force --sign "Developer ID Application: Nanjing Yuanlian Network Technology Co., Ltd (BHYBHZGP8X)" --entitlements entitlements.plist target/release/bundle/macos/口袋原油PC.app
 
 
 # 验证签名是否有效
