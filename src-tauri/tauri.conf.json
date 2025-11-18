@@ -35,7 +35,7 @@
     },
     "bundle": {
       "active": true,
-      "targets": "all",
+      "targets": ["deb", "appimage", "nsis", "app", "dmg", "updater"],
       "identifier": "com.kingbi.oilpc",
       "icon": [
         "icons/32x32.png",
@@ -50,8 +50,7 @@
       "macOS": {
         "hardenedRuntime": true,
         "minimumSystemVersion": "10.15",
-        "entitlements": "./entitlements.plist",
-        "signingIdentity": "Developer ID Application: Nanjing Yuanlian Network Technology Co., Ltd (BHYBHZGP8X)"
+        "entitlements": "./entitlements.plist"
       }
     }
   }
